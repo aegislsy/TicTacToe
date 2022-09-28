@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: "quicksand", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 200%;
+}
