@@ -27,3 +27,32 @@ function playAgain(y) {
   checkWInner(1, 5, 9);
   checkWInner(3, 5, 7);
 }
+if (move == 9 && isGameOver == false) {
+  draw();
+}
+function checkWinner(a,b,c) {
+  a--; b--; c--;
+  if (
+    (span[a].dataset.player === span[b].dataset.player) &&
+    (span[a].dataset.player === span[c].dataset.player) &&
+    (span[a].dataset.player === span[c].dataset.player) &&(
+      (span[a],dataset.player === "x") || span[a].dataset.player == "o" ) 
+      && isGameOver(a);
+  )
+}
+function playAgain() {
+  document.getElementByIdClassName("alert")[0].parent.removeChild(document.getElementByIdClassName("alert")[0]);
+  resetGame();
+  window.isGameOver = false;
+  for(var k = 0; k<span.length; k++) {
+    span[k].parentNode.className = span[k].parentNode.className.replace("activeBox");
+  }
+}
+
+function resetGame() {
+  for(i=0; i<span.length; i++) {
+    span[i].dataset.player = "none";
+    span[i].innerHTML = "&nbsp";
+  }
+
+}
