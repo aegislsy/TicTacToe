@@ -40,13 +40,13 @@ span {
   border-top: none;
 }
 .bottom {
-  border-top: none;
+  border-bottom: none;
 }
 .right {
-  border-top: none;
+  border-right: none;
 }
 .left {
-  border-top: none;
+  border-left: none;
 }
 .alert {
   height: 75px;
@@ -58,14 +58,17 @@ span {
   margin-top: -50%;
   border-radius: 20px;
   -webkit-border-radius: 20px;
-  -moz-animation: larger 00.5s;
+  -moz-border-radius: 20px;
   box-shadow: 0 0 75px 2px dimgray;
   animation: larger 0.5s;
-  -webkit-animation: larger 0.5x;
+  -webkit-animation: larger 0.5s;
   -moz-animation: larger 0.5s;
   animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: content-box;
-  -moz-animation-fill-mode: content-box;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   padding: 30px;
   bottom: 50px;
   top: 0px;
@@ -124,7 +127,6 @@ button {
 button:focus {
   background: silver;
 }
-
 .activeBox {
   background: silver;
 }
