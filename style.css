@@ -6,9 +6,16 @@ body {
 }
 h1 {
   font-size: 200%;
+  display: block;
+  margin: 80px;
 }
 #container {
-  margin: 5% auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
